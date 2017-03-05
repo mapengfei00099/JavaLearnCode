@@ -1,6 +1,6 @@
 package com.batraining.javabase.course03;
 
-/**
+/*注意初始化的顺序
  */
 public class Phone {
    private String broad;

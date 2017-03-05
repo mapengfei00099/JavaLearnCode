@@ -1,4 +1,4 @@
-package com.batraining.javabase.course05;
+package com.batraining.javabase.course05.question;
 
 import com.batraining.javabase.course05.question.Question;
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * Created by pengfei on 2016/12/4.
+ *
  */
 public class RandomTest {
     public static void main(String[] args) {

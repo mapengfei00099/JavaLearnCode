@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 /**
- * Created by pengfei on 2016/10/22.
+ * 读取控制台的输入
  */
 public class ScannerExample {
     public static void main(String[] args) throws FileNotFoundException {

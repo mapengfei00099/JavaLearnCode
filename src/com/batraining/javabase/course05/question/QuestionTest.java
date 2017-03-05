@@ -1,8 +1,6 @@
 package com.batraining.javabase.course05.question;
 
 
-import com.batraining.javabase.course05.SigleQuestion;
-
 /**
  * Created by pengfei on 2017/1/10.
  */

@@ -3,7 +3,7 @@ package com.batraining.javabase.course03;
 import java.util.Scanner;
 
 /**
- * Created by pengfei on 2016/10/15.
+ *作业题
  */
 public class LearnTest {
     public static void main(String[] args) {

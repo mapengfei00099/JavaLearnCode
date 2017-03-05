@@ -1,7 +1,7 @@
 package com.batraining.javabase.course03;
 
 /**
- * Created by pengfei on 2016/10/22.
+ *
  */
 public class Person {
     String name;

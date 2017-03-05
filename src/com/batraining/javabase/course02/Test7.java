@@ -1,7 +1,7 @@
 package com.batraining.javabase.course02;
 
 /**
- * Created by pengfei on 2016/11/27.
+ *
  */
 public class Test7
 {

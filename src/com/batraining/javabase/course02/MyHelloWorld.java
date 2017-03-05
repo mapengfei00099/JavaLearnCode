@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.util.DoubleSummaryStatistics;
 
 /**
- * Created by pengfei on 2016/11/19.
+ *
  */
 public class MyHelloWorld {
     public static void main(String[] args){

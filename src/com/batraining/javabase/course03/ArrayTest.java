@@ -7,9 +7,10 @@ import java.util.Scanner;
  */
 public class ArrayTest {
     public static void main(String[] args) {
+        //数组的初始化
         int[] arr1 = new int[]{1, 2, 3};
         int[] arr2 = new int[2];
-
+        //数组拷贝
         System.arraycopy(arr1, 1, arr2, 0, 2);
         for (int i = 0; i < arr2.length; i++) {
             System.out.println(arr2[i]);
