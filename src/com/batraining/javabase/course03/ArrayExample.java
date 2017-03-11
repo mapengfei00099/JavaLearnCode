@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * Created by pengfei on 2016/10/21.
+ *
  */
 public class ArrayExample {
     public static void main(String[] args) {

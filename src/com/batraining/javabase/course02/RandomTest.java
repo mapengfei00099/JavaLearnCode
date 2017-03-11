@@ -13,6 +13,7 @@ public class RandomTest {
             i =100;
         }
         System.out.println(Arrays.toString(arr));
+        //随机数类
         Random random  = new Random();
     }
 }
