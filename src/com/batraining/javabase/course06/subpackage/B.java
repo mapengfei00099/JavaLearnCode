@@ -3,7 +3,7 @@ package com.batraining.javabase.course06.subpackage;
 import com.batraining.javabase.course06.A;
 
 /**
- * Created by pengfei on 2017/3/5.
+ *
  */
 public class B {
     public static void main(String[] args) {

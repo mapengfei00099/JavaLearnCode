@@ -1,7 +1,7 @@
 package com.batraining.javabase.course06.abstracttest;
 
 /**
- * Created by pengfei on 2016/12/18.
+ *
  */
 public class Teacher extends Person {
 
