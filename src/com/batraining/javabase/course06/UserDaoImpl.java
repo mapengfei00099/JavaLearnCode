@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by pengfei on 2017/3/5.
  */
-public class UserDaoImpl implements UserDao {
+public class UserDaoImpl implements UserDao,Cloneable {
     private List<User> userDB = new ArrayList<User>();
     {
         userDB.add(new User(1,"xiaozhang","111111","zhangxx",0));

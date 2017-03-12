@@ -5,6 +5,7 @@ package com.batraining.javabase.course06;
  */
 public class BlockCodeTest {
 
+    public static final int MAX_NUM=10;
     private static int sNum = 10;
     private int num;
 
@@ -36,7 +37,6 @@ public class BlockCodeTest {
         //创建对象，先执行成员变量的初始化，然后在执行普通代码块，然后执行构造
         BlockCodeTest blockCodeTest = new BlockCodeTest();
         BlockCodeTest blockCodeTest1 = new BlockCodeTest();
-
 
     }
 

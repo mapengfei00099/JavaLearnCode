@@ -7,9 +7,9 @@ package com.batraining.javabase.course06;
 public class IntegerTest {
     public static void main(String[] args) {
         //引用数据类型，除了new XXX创建实例，还可以通过基本数据类型自动转换
-        Integer i1 = 10;
+        Integer i1 = 10;//自动装箱
         Integer i2 = new Integer(10);
-        int i3 = i2;
+        int i3 = i2;//自动拆箱
         Integer i4 = null;//基本数据类型不具备的null可以赋值给包装类
         //包装类和对应的基本数据类型做比对，那么会自动转换对应的基本数据类型做对应
         System.out.println(i1 == 10);
