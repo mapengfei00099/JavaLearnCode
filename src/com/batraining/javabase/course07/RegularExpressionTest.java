@@ -21,8 +21,8 @@ package com.batraining.javabase.course07;
  * .         代表任何字符
  * \d        代表0-9的字符
  * \D        代表非0-9的字符
- * \w        代表[a-zA-Z]的字符
- * \W        代表非[a-zA-Z]的字符
+ * \w        代表[a-zA-Z0-9_]的字符
+ * \W        代表非\w的字符
  * \s        代表空白字符
  *
  *
