@@ -10,7 +10,7 @@ import java.util.Properties;
 public class PropertiesTest {
 
     public static void main(String[] args) {
-        //Properties 是Hash Map的子类，通常用来读取key=value 的配置properties文件
+        //Properties 是HashTable的子类，通常用来读取key=value 的配置properties文件
         Properties properties = new Properties();
         try {
             properties.load(new FileReader("info.properties"));
