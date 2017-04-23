@@ -18,7 +18,7 @@ public class ListFileTest {
                 if (file1.isFile()) {
                     System.out.println(file1.getAbsolutePath());
                 } else {
-                    System.out.println(file.getAbsolutePath());
+                    System.out.println(file1.getAbsolutePath());
                     listDir(file1.getAbsolutePath());
                 }
             }

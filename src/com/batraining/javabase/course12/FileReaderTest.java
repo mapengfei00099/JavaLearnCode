@@ -1,4 +1,5 @@
-package com.batraining.javabase.course11;
+package com.batraining.javabase.course12;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,31 +10,32 @@ import java.util.*;
 /**
  * Created by pengfei on 2017/4/16.
  */
-public class ReaderTest {
+public class FileReaderTest {
     public static void main(String[] args) {
         FileReader fr = null;
         try {
-             fr = new FileReader(new File("data.txt"));
-            int c = 0;
-            List<Character> charList= new ArrayList<Character>();
-           while ((c= fr.read())!=-1){
-               char temp  = (char)c;
-               charList.add(temp);
-           }
-            char[] charArr = new char[charList.size()];
-            int index=0;
-            for (Character temp : charList) {
-                charArr[index] =temp;
-                index++;
+            fr = new FileReader(new File("data.txt"));
+
+            int length = 0;
+           char[] buffer = new char[512];//缓冲区
+           StringBuilder sb= new StringBuilder();
+            while ((length = fr.read(buffer)) != -1) {
+                sb.append(buffer);
             }
-           String str= new String(charArr);
+            String str =sb.toString();
+
+
+
+
+
+            System.out.println(str);
             String[] strArr = str.split("\r\n");
-            Map<String,String> userNamePasswordMap = new HashMap<String,String>();
+            Map<String, String> userNamePasswordMap = new HashMap<String, String>();
             for (String temp : strArr) {
-                String[] strArrTemp =temp.split(",");
+                String[] strArrTemp = temp.split(",");
                 String userName = strArrTemp[0];
                 String password = strArrTemp[1];
-                userNamePasswordMap.put(userName,password);
+                userNamePasswordMap.put(userName, password);
 
             }
             Scanner scanner = new Scanner(System.in);
@@ -42,12 +44,12 @@ public class ReaderTest {
             System.out.print("请输入密码：");
             String password = scanner.next();
             String realPassword = userNamePasswordMap.get(userName);
-            if(realPassword ==null){
+            if (realPassword == null) {
                 System.out.println("你输入的用户不存在");
-            }else{
-                if(!realPassword.equals(password)){
+            } else {
+                if (!realPassword.equals(password)) {
                     System.out.println("密码不正确");
-                }else{
+                } else {
                     System.out.println("登录成功");
                 }
 
@@ -57,7 +59,7 @@ public class ReaderTest {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
 
             try {
                 fr.close();
